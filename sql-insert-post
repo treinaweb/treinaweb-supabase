@@ -1,0 +1,38 @@
+INSERT INTO posts (
+  title,
+  content,
+  url_image,
+  author,
+  published_at,
+  read_time,
+  tags,
+  full_content
+)
+VALUES (
+  'Getting Started with Next.js 14',
+  'Learn how to build modern web applications with Next.js 14 and its latest features including App Router, Server Components, and improved performance.',
+  'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&h=600&fit=crop',
+  '4049a326-cf41-40a9-91d1-fa3d322abf85',
+  '2025-08-04'::date,
+  '5 min read',
+  ARRAY['Next.js', 'React', 'Development', 'TypeScript'],
+  $$
+  <h2>Introduction to Next.js 14</h2>
+  <p>Next.js 14 brings significant improvements to the React development experience with enhanced App Router capabilities, improved Server Components, and better performance optimizations.</p>
+
+  <h3>Key Features</h3>
+  <ul>
+    <li><strong>App Router:</strong> The new routing system provides better performance and developer experience</li>
+    <li><strong>Server Components:</strong> Improved server-side rendering capabilities</li>
+    <li><strong>Turbopack:</strong> Faster build times and hot reload</li>
+    <li><strong>Improved TypeScript support:</strong> Better type safety and IntelliSense</li>
+  </ul>
+
+  <h3>Getting Started</h3>
+  <p>To create a new Next.js 14 project, you can use the following command:</p>
+  <pre><code>npx create-next-app@latest my-app --typescript --tailwind --eslint</code></pre>
+
+  <h3>Conclusion</h3>
+  <p>Next.js 14 represents a significant step forward in React development, offering improved performance, better developer experience, and more powerful features for building modern web applications.</p>
+  $$
+);
